@@ -15,7 +15,9 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: ["https://tasksphere-one.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,}));
 app.use(morgan("dev")); // tiny, short, common, combined, dev
 app.use(express.json());
 
