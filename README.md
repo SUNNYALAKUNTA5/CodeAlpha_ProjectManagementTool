@@ -7,7 +7,7 @@ TaskSphere is a clean, modern, and responsive project management web app built w
 
 ## 🚀 Demo
 
-Live Demo: Coming soon (deployed build will be available after deployment)
+Live Demo: https://tasksphere-one.vercel.app
 
 ---
 
@@ -42,12 +42,12 @@ Clone the repo and install dependencies for each workspace (frontend and backend
 1. Clone repository
 ```powershell
 git clone https://github.com/SUNNYALAKUNTA5/CodeAlpha_ProjectManagementTool.git
-cd Project_Management_Tool
+cd CodeAlpha_ProjectManagementTool
 ```
 
 2. Install dependencies
 
-- Option A — install both root workspaces separately
+- install both root workspaces separately
 ```powershell
 # Frontend
 cd frontend
@@ -68,7 +68,7 @@ VITE_BACKEND_URL=http://localhost:5000
 - Backend: create backend/.env (example)
 ```env
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/task-sphere
+MONGO_URI=mongodb:mongo_connection_string
 JWT_SECRET=your_jwt_secret_here
 ```
 
